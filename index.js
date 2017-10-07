@@ -1,5 +1,6 @@
 import mongoose from './config/mongoose';
 import express from './config/express';
+import passport from './config/passport';
 
 
 
@@ -8,6 +9,7 @@ process.env.PORT = process.env.PORT || 3000;
 
 var db = mongoose();
 var app = express();
+var psp = passport();
 
 
 app.listen(process.env.PORT, () => {
